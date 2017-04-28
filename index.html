@@ -1,0 +1,65 @@
+<!-- this page will be similar to this: https://codepen.io/FreeCodeCamp/full/ONjoLe/ -->
+<!-- user story 1: I can click a button to show me a new random quote. -->
+<!-- user story 2: I can press a button to tweet out a quote. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quote Generator</title>
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.css.map" type="text/css" rel="stylesheet">    
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.min.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">      
+      <div id="message"><!-- the randomly imported quotes go here --></div>        
+      <button class=btn-default><p id="button-text">Next quote</p></button>  
+      
+      <!--Tweet button-->
+      <!--<a class="twitter-share-button"
+      href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>-->
+      <a id="tweet-quote" href="https://twitter.com/intent/tweet">
+        <img id="twitter-logo" src="https://static.addtoany.com/images/blog/tweet-button-2015.png" alt="tweet-button">
+      </a>
+      
+      <script>
+        window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));
+      </script>
+      <!--end of Tweet button-->
+     
+      </div>  
+    <!--end of "container"-->
+    
+    <div class="signature">
+      <p id="signature"> - by Adam Toth &copy; | 2017</p>
+      <a href="mailto: adam.toth.n@gmail.com">adam.toth.n@gmail.com</a>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="css/bootstrap-3.3.7/js/bootstrap.js"></script>    
+    <script src="js/interactive.js"></script>    
+  </body>  
+</html>
