@@ -4,6 +4,8 @@ $(document).ready(function() {
   var randomBackgroundColors;
   var randomize;   
   
+  document.getElementById("message").innerHTML = "<h2>Anyone who has never made a mistake has never tried anything new.</h2> </br> - </br><p>Albert Einstein</p>";
+  
   $("button").click(function() {     
     //9 random quotes to match the 9 colors
     quotes = [
@@ -36,8 +38,6 @@ $(document).ready(function() {
     $("#message p").css({"color": randomize, "font-weight": 800});
     $("#message h2").css({"color": randomize});    
   })
-  var initialQuote = "<h2>Anyone who has never made a mistake has never tried anything new.</h2> </br> - </br><p style='font-weight: 800'>Albert Einstein</p>";
-  $("#message").html(initialQuote);  
 });
 
 
