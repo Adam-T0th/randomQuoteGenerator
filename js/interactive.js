@@ -72,12 +72,9 @@ $(document).ready(function() {
     }); 
   
     $('#tweet-quote').click(function() {        
-      function openURL(noBracketsMessage){
-        window.open(noBracketsMessage, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
-      }
       var tweetQuote = $("#message").text();
       if (tweetQuote != 'Press below for a quote') {
-        window.open('https://twitter.com/intent/tweet?text="' + tweetQuote + '"', '_blank');
+        window.open('https://twitter.com/intent/tweet?text="' + tweetQuote, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
       }
     })
 });
