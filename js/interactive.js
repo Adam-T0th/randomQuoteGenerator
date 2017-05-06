@@ -72,9 +72,6 @@ $(document).ready(function() {
     }); 
   
     $('#tweet-quote').click(function() {      
-      var tweetQuote = $("#message").text();
-      window.open('https://twitter.com/intent/tweet?text="' + tweetQuote, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
-    
       window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
           t = window.twttr || {};
@@ -90,5 +87,8 @@ $(document).ready(function() {
         };
         return t;
       }(document, "script", "twitter-wjs"));
+      
+      var tweetQuote = $("#message").text();
+      window.open('https://twitter.com/intent/tweet?text="' + tweetQuote, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');    
     })
 });
