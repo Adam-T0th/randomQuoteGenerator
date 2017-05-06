@@ -45,7 +45,7 @@ $(document).ready(function() {
         "<h2>Anyone who has never made a mistake has never tried anything new.</h2> </br> - </br><p>Albert Einstein</p>",
         "<h2>Life is like riding a bicycle. To keep your balance, you must keep moving.</h2> </br> - </br><p>Albert Einstein</p>",
         "<h2>The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts.</h2> </br> - </br><p>Bertrand Russell</p>",
-        "<h2>When one person suffers from a delusion it is called insanity; when many people suffer from a delusion it is called religion.</h2> </br> - </br><p>Robert Pirsig</p>",
+        "<h2>When one person suffers from a delusion it is called insanity. When many people suffer from a delusion it is called religion.</h2> </br> - </br><p>Robert Pirsig</p>",
         "<h2>I find that the harder I work, the more luck I seem to have.</h2> </br> - </br><p>Thomas Jefferson</p>",
         "<h2>Do, or do not. There is no 'try'.</h2> </br> - </br><p>Yoda</p>",
         "<h2>The only way to get rid of a temptation is to yield to it.</h2> </br> - </br><p>Oscar Wilde</p>",
@@ -71,10 +71,8 @@ $(document).ready(function() {
       $("#message h2").css({"color": randomizeColors});
     }); 
   
-    $('#tweet-quote').click(function() {        
+    $('#tweet-quote').click(function() {      
       var tweetQuote = $("#message").text();
-      if (tweetQuote != 'Press below for a quote') {
-        window.open('https://twitter.com/intent/tweet?text="' + tweetQuote, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
-      }
+      window.open('https://twitter.com/intent/tweet?text="' + tweetQuote, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
     })
 });
